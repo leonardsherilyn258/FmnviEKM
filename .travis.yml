@@ -3,7 +3,6 @@ node_js:
   - "14"
 branches:
   only:
-    - main
 cache:
   directories:
     - node_modules
@@ -15,7 +14,6 @@ deploy:
   provider: pages
   skip_cleanup: true
   local_dir: out
-  token: $GITHUB_TOKEN
   target_branch: gh-pages
   keep_history: true
   on:
